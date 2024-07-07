@@ -2,8 +2,8 @@ from ultralytics import YOLO
 
 
 def main():
-    model = YOLO('yolov8s-obb.yaml').load('yolov8s-obb.pt')  # build from YAML and transfer weights
-    model.train(data='dota8-obb.yaml', epochs=100, imgsz=1024, batch=4, workers=4)
+    model = YOLO('config/yolov8s-obb.yaml').load('weights/yolov8l-obb.pt')  # build from YAML and transfer weights
+    model.train(data='config/dota8-obb.yaml', epochs=100, imgsz=1024, batch=4, workers=4)
 
 
 if __name__ == '__main__':
