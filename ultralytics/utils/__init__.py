@@ -300,7 +300,7 @@ class ThreadingLocked:
 
     Example:
         ```python
-        from ultralytics.utils import ThreadingLocked
+        from ultralytics.xml_utils.py import ThreadingLocked
 
         @ThreadingLocked()
         def my_function():
@@ -1043,7 +1043,7 @@ def url2file(url):
     return Path(clean_url(url)).name
 
 
-# Run below code on utils init ------------------------------------------------------------------------------------
+# Run below code on xml_utils.py init ------------------------------------------------------------------------------------
 
 # Check first-install steps
 PREFIX = colorstr("Ultralytics: ")

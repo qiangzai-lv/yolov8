@@ -75,8 +75,8 @@ class BaseTrainer:
         amp (bool): Flag to enable AMP (Automatic Mixed Precision).
         scaler (amp.GradScaler): Gradient scaler for AMP.
         data (str): Path to data.
-        trainset (torch.utils.data.Dataset): Training dataset.
-        testset (torch.utils.data.Dataset): Testing dataset.
+        trainset (torch.xml_utils.py.data.Dataset): Training dataset.
+        testset (torch.xml_utils.py.data.Dataset): Testing dataset.
         ema (nn.Module): EMA (Exponential Moving Average) of the model.
         resume (bool): Resume training from a checkpoint.
         lf (nn.Module): Loss function.
@@ -132,7 +132,7 @@ class BaseTrainer:
             self.trainset, self.testset = self.get_dataset()
         self.ema = None
 
-        # Optimization utils init
+        # Optimization xml_utils.py init
         self.lf = None
         self.scheduler = None
 

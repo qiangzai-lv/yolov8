@@ -70,7 +70,7 @@ class BaseValidator:
         Initializes a BaseValidator instance.
 
         Args:
-            dataloader (torch.utils.data.DataLoader): Dataloader to be used for validation.
+            dataloader (torch.xml_utils.py.data.DataLoader): Dataloader to be used for validation.
             save_dir (Path, optional): Directory to save results.
             pbar (tqdm.tqdm): Progress bar for displaying progress.
             args (SimpleNamespace): Configuration for the validator.

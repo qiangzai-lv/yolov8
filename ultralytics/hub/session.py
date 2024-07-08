@@ -45,7 +45,7 @@ class HUBTrainingSession:
         self.rate_limits = {"metrics": 3, "ckpt": 900, "heartbeat": 300}  # rate limits (seconds)
         self.metrics_queue = {}  # holds metrics for each epoch until upload
         self.metrics_upload_failed_queue = {}  # holds metrics for each epoch if upload failed
-        self.timers = {}  # holds timers in ultralytics/utils/callbacks/hub.py
+        self.timers = {}  # holds timers in ultralytics/xml_utils.py/callbacks/hub.py
         self.model = None
         self.model_url = None
 

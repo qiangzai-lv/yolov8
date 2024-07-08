@@ -2,18 +2,21 @@ path: /Users/qiangzai/Documents/workspace/py/ultralytics/dataset # dataset root 
 train: images/train
 val: images/val
 names:
-  0: plane
-  1: baseball-diamond
-  2: bridge
-  3: ground-track-field
-  4: small-vehicle
-  5: large-vehicle
-  6: ship
-  7: tennis-court
-  8: basketball-court
-  9: storage-tank
-  10: soccer-ball-field
-  11: roundabout
-  12: harbor
-  13: swimming-pool
-  14: helicopter
+  0: "A220"
+  1: "A330"
+  2: "A320/321"
+  3: "Boeing737-800"
+  4: "Boeing787"
+  5: "ARJ21"
+  6: "other"
+  7: "Boeing737"
+  8: "Boeing747"
+  9: "Boeing777"
+  10: "Boeing787"
+  11: "C919"
+  12: "A220"
+  13: "A321"
+  14: "A330"
+  15: "A350"
+  16: "ARJ21"
+  17: "other-airplane"

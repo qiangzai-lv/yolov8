@@ -42,7 +42,7 @@ def spaces_in_path(path):
 
     Example:
         ```python
-        with ultralytics.utils.files import spaces_in_path
+        with ultralytics.xml_utils.py.files import spaces_in_path
 
         with spaces_in_path('/path/with spaces') as new_path:
             # Your code here
@@ -158,7 +158,7 @@ def update_models(model_names=("yolov8n.pt",), source_dir=Path("."), update_name
 
     Example:
         ```python
-        from ultralytics.utils.files import update_models
+        from ultralytics.xml_utils.py.files import update_models
 
         model_names = (f"rtdetr-{size}.pt" for size in "lx")
         update_models(model_names)

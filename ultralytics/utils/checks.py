@@ -59,7 +59,7 @@ def parse_requirements(file_path=ROOT.parent / "requirements.txt", package=""):
 
     Example:
         ```python
-        from ultralytics.utils.checks import parse_requirements
+        from ultralytics.xml_utils.py.checks import parse_requirements
 
         parse_requirements(package='ultralytics')
         ```
@@ -349,7 +349,7 @@ def check_requirements(requirements=ROOT.parent / "requirements.txt", exclude=()
 
     Example:
         ```python
-        from ultralytics.utils.checks import check_requirements
+        from ultralytics.xml_utils.py.checks import check_requirements
 
         # Check a requirements.txt file
         check_requirements('path/to/requirements.txt')
@@ -632,7 +632,7 @@ def check_amp(model):
     Example:
         ```python
         from ultralytics import YOLO
-        from ultralytics.utils.checks import check_amp
+        from ultralytics.xml_utils.py.checks import check_amp
 
         model = YOLO('yolov8n.pt').model.cuda()
         check_amp(model)

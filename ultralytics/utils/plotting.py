@@ -94,7 +94,7 @@ class Colors:
         return tuple(int(h[1 + i : 1 + i + 2], 16) for i in (0, 2, 4))
 
 
-colors = Colors()  # create instance for 'from utils.plots import colors'
+colors = Colors()  # create instance for 'from xml_utils.py.plots import colors'
 
 
 class Annotator:
@@ -892,7 +892,7 @@ def save_one_box(xyxy, im, file=Path("im.jpg"), gain=1.02, pad=10, square=False,
 
     Example:
         ```python
-        from ultralytics.utils.plotting import save_one_box
+        from ultralytics.xml_utils.py.plotting import save_one_box
 
         xyxy = [50, 50, 150, 150]
         im = cv2.imread('image.jpg')
@@ -1100,7 +1100,7 @@ def plot_results(file="path/to/results.csv", dir="", segment=False, pose=False, 
 
     Example:
         ```python
-        from ultralytics.utils.plotting import plot_results
+        from ultralytics.xml_utils.py.plotting import plot_results
 
         plot_results('path/to/results.csv', segment=True)
         ```

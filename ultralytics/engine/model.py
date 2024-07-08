@@ -526,7 +526,7 @@ class Model(nn.Module):
         Benchmarks the model across various export formats to evaluate performance.
 
         This method assesses the model's performance in different export formats, such as ONNX, TorchScript, etc.
-        It uses the 'benchmark' function from the ultralytics.utils.benchmarks module. The benchmarking is configured
+        It uses the 'benchmark' function from the ultralytics.xml_utils.py.benchmarks module. The benchmarking is configured
         using a combination of default configuration values, model-specific arguments, method-specific defaults, and
         any additional user-provided keyword arguments.
 
@@ -667,7 +667,7 @@ class Model(nn.Module):
         Conducts hyperparameter tuning for the model, with an option to use Ray Tune.
 
         This method supports two modes of hyperparameter tuning: using Ray Tune or a custom tuning method.
-        When Ray Tune is enabled, it leverages the 'run_ray_tune' function from the ultralytics.utils.tuner module.
+        When Ray Tune is enabled, it leverages the 'run_ray_tune' function from the ultralytics.xml_utils.py.tuner module.
         Otherwise, it uses the internal 'Tuner' class for tuning. The method combines default, overridden, and
         custom arguments to configure the tuning process.
 

@@ -1,5 +1,5 @@
 # Ultralytics YOLO 🚀, AGPL-3.0 license
-"""Module utils."""
+"""Module xml_utils.py."""
 
 import copy
 import math
